@@ -18,8 +18,8 @@ body {
 	/* align-items: center; */
 	/* color: red; */
 	/* border: ; */
-	width: 350px;
-	height: 380px;
+	width: 30em;
+	height: 32em;
 	justify-content: space-between;
 	padding: 1em;
 	margin: 10px;
@@ -80,6 +80,11 @@ body {
     align-items: center;
 	gap: 0.5em;
 	width: 100%;
+}
+
+.FormBox .radiobox input {
+	height: 1.1em;
+	width:  1.1em;
 }
 
 .FormLineStyle {

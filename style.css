@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 1em;
+}
+
+.FormBox {
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	/* color: red; */
+	/* border: ; */
+	width: 350px;
+	height: 380px;
+	justify-content: space-between;
+	padding: 1em;
+	margin: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.FormBox h1 {
+	font-size: 1.5em;
+}
+
+.FormBox h3 {
+	font-size: 1em;
+	font-weight: normal;
+	color: #777;
+}
+
+.FormBox hr {
+	width: calc(100% + ((1em) * 2));
+	align-self: center;
+}
+
+.FormBox .FormLineStyle .InputText {
+	background-color: #eee;
+	padding: 0.5em;
+	border-radius: 0.5em;
+	border-color: #999;
+	border-style: solid;
+	border-width: 1px;
+	width: 100%;
+}
+
+.FormBox p {
+	font-size: 0.8em;
+	color: #777;
+}
+
+.FormBox select {
+	padding: 0.5em;
+	border-radius: 0.5em;
+	border-color: #999;
+	border-style: solid;
+	border-width: 1px;
+	width: 100%;
+}
+
+.FormBox .radiobox {
+	padding: 0.5em;
+	border-radius: 0.5em;
+	border-color: #999;
+	border-style: solid;
+	border-width: 1px;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	gap: 0.5em;
+	width: 100%;
+}
+
+.FormLineStyle {
+	display: flex;
+	justify-content: space-between;
+	gap: 0.5em;
+}
+
+.SubmitForm {
+	width: 11em;
+	align-self: center;
+	border-radius: 0.5em;
+	border-width: 0;
+	background-color: rgb(65, 155, 49);
+	padding: 0.5em;
+	color: white;
+	font-weight: bold;
+}

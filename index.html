@@ -8,26 +8,27 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<form class="FormBox" method="post" action="gasd">
+		<form class="FormBox" method="get" action="index.html">
 			<div>
 				<h1>Cadastre-se</h1>
 				<h3>É rápido e fácil.</h3>
 			</div>
 			<hr />
 			<div class="FormLineStyle">
-				<input class="InputText" type="text" name="Nome" placeholder="Nome" />
-				<input class="InputText" type="text" name="Sobrenome" placeholder="Sobrenome" />
+				<input class="InputText" type="text" name="Nome" placeholder="Nome" minlength="3" maxlength="20" required />
+				<input class="InputText" type="text" name="Sobrenome" placeholder="Sobrenome"  minlength="3" maxlength="20" required />
 			</div>
 			<div class="FormLineStyle">
-				<input class="InputText" type="text" name="CelOrEmail" placeholder="Celular ou E-Mail" />
+				<input class="InputText" type="text" name="CelOrEmail" placeholder="Celular ou E-Mail"  minlength="10" maxlength="40" required />
 			</div>
 			<div class="FormLineStyle">
-				<input class="InputText" type="password" name="Password" placeholder="Nova Senha" />
+				<input class="InputText" type="password" name="Password" placeholder="Nova Senha"  minlength="8" maxlength="20" required />
 			</div>
 			<section class="MoreThan1Line">
 				<p>Data de Nascimento</p>
 				<div class="FormLineStyle">
-					<select name="BirthDay">
+					<select name="BirthDay" required>
+						<option value="">Dia</option>
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -60,7 +61,8 @@
 						<option value="30">30</option>
 						<option value="31">31</option>
 					</select>
-					<select name="BirthMonth">
+					<select name="BirthMonth" required>
+						<option value="">Mês</option>
 						<option value="1">Jan</option>
 						<option value="2">Fev</option>
 						<option value="3">Mar</option>
@@ -74,7 +76,8 @@
 						<option value="11">Nov</option>
 						<option value="12">Dez</option>
 					</select>
-					<select name="BirthYear">
+					<select name="BirthYear" required>
+						<option value="">Ano</option>
 						<option value="1940">1940</option>
 						<option value="1941">1941</option>
 						<option value="1942">1942</option>
@@ -162,12 +165,13 @@
 			<section class="MoreThan1Line">
 				<p>Gênero</p>
 				<div class="FormLineStyle">
-					<div class="radiobox"><label for="Masculino">Masculino</label><input type="radio" name="Gender" value="Masculino" /></div>
+					<div class="radiobox"><label for="Masculino">Masculino</label><input required type="radio" name="Gender" value="Masculino" /></div>
 					<div class="radiobox"><label for="Feminino">Feminino</label><input type="radio" name="Gender" value="Feminino" /></div>
 					<div class="radiobox"><label for="Personalizado">Personalizado</label><input type="radio" name="Gender" value="Personalizado" /></div>
 				</div>
 			</section>
-			<p>Ao clicas em cadastre-se, você concorda com nossos <a href="http://google.com">Termos</a>. Você poderá receber notificações por SMS ou email.</p>
+			<p>Este formulário não está sendo enviado para lugar nenhum atualmente. Delete esta linha e corrija o method e action no form para utilizar. <strong style="color: red;">Não preencha senhas reais nesta página de teste!!</strong></p>
+			<p>Ao clicar em cadastre-se, você concorda com nossos <a href="http://google.com">Termos</a>. Você poderá receber notificações por SMS ou email.</p>
 			<input class="SubmitForm" type="submit" value="Cadastre-se" />
 		</form>
 	</body>

@@ -56,6 +56,10 @@ body {
 	color: #777;
 }
 
+.FormBox a {
+	font-size: 1em;
+}
+
 .FormBox select {
 	padding: 0.5em;
 	border-radius: 0.5em;

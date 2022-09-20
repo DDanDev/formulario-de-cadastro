@@ -1,0 +1,29 @@
+:root{
+    --corPrincipal: rgb(33, 140, 212);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--corPrincipal);
+}
+
+.FormBox{
+    width: 400px;
+    height: 500px;
+    background: white;
+    padding: 50px;
+}
+
+.SubmitForm{
+    width: 300px;
+    height: 35px;
+    background: var(--corPrincipal);
+}
+
+.SubmitForm:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.6);
+}
